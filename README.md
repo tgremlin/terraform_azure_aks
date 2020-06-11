@@ -6,7 +6,7 @@ The following variables are fed through a git ignored .tfvars file:
 - ARM_SUBSCRIPTION_ID = "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
 - ARM_TENANT_ID = "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
 
-Execute using terraform apply -var-file="file.tfvars"
+Execute using `terraform apply -var-file="file.tfvars"`
 
 Other variables are provided at CLI prompt:
 - resource_group_name
@@ -14,8 +14,12 @@ Other variables are provided at CLI prompt:
 - dns_prefix
 - node_count
 
-These variables are set with defaults, but can be overridden at the CLI with -var="vm_size="Standard_A4_v2" for example.
+These variables are set with defaults, but can be overridden at the CLI with `-var="vm_size="Standard_A4_v2"` for example.
 - vm_size (default set to "Standard_A2_v2")
 - location (default set to "South Central US")
 
+Output variables:
+- host
+- kube_config
+Save these to a file that you can pass to kubectl using `terraform output > azurek8s` for example. 
 
