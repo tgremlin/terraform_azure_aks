@@ -15,7 +15,7 @@ Other variables are provided at CLI prompt:
 - node_count
 
 These variables are set with defaults, but can be overridden at the CLI with -var="vm_size="Standard_A4_v2" for example.
-- vm_size (default set to "Standard_A2_v2"
+- vm_size (default set to "Standard_A2_v2")
 - location (default set to "South Central US")
 
 
