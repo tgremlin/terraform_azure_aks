@@ -1,5 +1,5 @@
 # terraform_azure_aks
-######Variables
+### Variables
 The following variables are fed through a git ignored .tfvars file:
 - ARM_CLIENT_ID = "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
 - ARM_CLIENT_SECRET = "XXXXXXXXXXXX"
